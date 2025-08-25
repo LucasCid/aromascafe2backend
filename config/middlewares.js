@@ -17,7 +17,7 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      enabled: true,
+      // Removemos "enabled: true" para arreglar el warning
       headers: '*',
       origin: [
         'http://localhost:3000',
