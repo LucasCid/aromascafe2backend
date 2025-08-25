@@ -17,13 +17,16 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      // Removemos "enabled: true" para arreglar el warning
       headers: '*',
       origin: [
         'http://localhost:3000',
+        'http://localhost:1337',
         'https://aromascafe2.vercel.app',
+        'https://aromascafe2backend.onrender.com', // ← Agregar esta línea
         'https://*.vercel.app',
+        'https://*.onrender.com', // ← Y esta también
         /\.vercel\.app$/,
+        /\.onrender\.com$/,
       ]
     }
   },
