@@ -21,8 +21,10 @@ module.exports = [
       origin: [
         'http://localhost:3000',
         'http://localhost:1337',
+        process.env.CLIENT_URL,
         'https://aromascafe2.vercel.app',
-        'https://aromascafe2backend.onrender.com', // ← Agregar esta línea
+        'https://aromascafe2backend.onrender.com',
+        'https://aromascafe2-aj7zdrmo8-lucas-cids-projects.vercel.app', // ← Agregar esta línea
         'https://*.vercel.app',
         'https://*.onrender.com', // ← Y esta también
         /\.vercel\.app$/,
